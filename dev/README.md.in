@@ -1,0 +1,24 @@
+# Python NIS API
+
+Python wrappers for the NEM NIS REST API.
+
+**Table Of Contents**
+
+- [API](#api)
+{api_table_of_contents}
+- [License](#license)
+- [Contact](#contact)
+
+# API
+
+The NEM NIS API version wrapped is {version}.
+
+{api_description}
+
+# License
+
+Apache v2, see [license](LICENSE).
+
+# Contact
+
+Email: team@qchain.co

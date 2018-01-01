@@ -1,0 +1,349 @@
+{
+    "version": "1.21",
+    "resources": [
+        {
+            "path": "/heartbeat"
+        },
+        {
+            "path": "/status"
+        },
+        {
+            "path": "/account/generate"
+        },
+        {
+            "path": "/account/get",
+            "parameters": [
+                {
+                    "name": "address"
+                }
+            ]
+        },
+        {
+            "path": "/account/get/from-public-key",
+            "parameters": [
+                {
+                    "name": "publicKey",
+                    "arg": "public_key"
+                }
+            ]
+        },
+        {
+            "path": "/account/get/forwarded",
+            "parameters": [
+                {
+                    "name": "address"
+                }
+            ]
+        },
+        {
+            "path": "/account/get/forwarded/from-public-key",
+            "parameters": [
+                {
+                    "name": "publicKey",
+                    "arg": "public_key"
+                }
+            ]
+        },
+        {
+            "path": "/account/status",
+            "parameters": [
+                {
+                    "name": "address"
+                }
+            ]
+        },
+        {
+            "path": "/account/transfers/incoming",
+            "parameters": [
+                {
+                    "name": "address"
+                },
+                {
+                    "name": "hash",
+                    "default": "__optional__"
+                },
+                {
+                    "name": "id",
+                    "default": "__optional__"
+                }
+            ]
+        },
+        {
+            "path": "/account/transfers/outgoing",
+            "parameters": [
+                {
+                    "name": "address"
+                },
+                {
+                    "name": "hash",
+                    "default": "__optional__"
+                },
+                {
+                    "name": "id",
+                    "default": "__optional__"
+                }
+            ]
+        },
+        {
+            "path": "/account/transfers/all",
+            "parameters": [
+                {
+                    "name": "address"
+                },
+                {
+                    "name": "hash",
+                    "default": "__optional__"
+                },
+                {
+                    "name": "id",
+                    "default": "__optional__"
+                }
+            ]
+        },
+        {
+            "path": "/local/account/transfers/incoming",
+            "parameters": [
+                {
+                    "name": "page"
+                }
+            ],
+            "method": "post"
+        },
+        {
+            "path": "/local/account/transfers/outgoing",
+            "parameters": [
+                {
+                    "name": "page"
+                }
+            ],
+            "method": "post"
+        },
+        {
+            "path": "/local/account/transfers/all",
+            "parameters": [
+                {
+                    "name": "page"
+                }
+            ],
+            "method": "post"
+        },
+        {
+            "path": "/account/harvests",
+            "parameters": [
+                {
+                    "name": "address"
+                },
+                {
+                    "name": "hash"
+                }
+            ]
+        },
+        {
+            "path": "/account/importances"
+        },
+        {
+            "path": "/account/namespace/page",
+            "parameters": [
+                {
+                    "name": "address"
+                },
+                {
+                    "name": "parent",
+                    "default": "__optional__"
+                },
+                {
+                    "name": "id",
+                    "default": "__optional__"
+                },
+                {
+                    "name": "pageSize",
+                    "default": "__optional__",
+                    "arg": "page_size"
+                }
+            ]
+        },
+        {
+            "path": "/account/mosaic/definition/page",
+            "parameters": [
+                {
+                    "name": "address"
+                },
+                {
+                    "name": "parent",
+                    "default": "__optional__"
+                },
+                {
+                    "name": "id",
+                    "default": "__optional__"
+                }
+            ]
+        },
+        {
+            "path": "/account/mosaic/owned",
+            "parameters": [
+                {
+                    "name": "address"
+                }
+            ]
+        },
+        {
+            "path": "/account/unlock",
+            "parameters": [
+                {
+                    "name": "privateKey",
+                    "arg": "private_key"
+                }
+            ],
+            "method": "post"
+        },
+        {
+            "path": "/account/lock",
+            "parameters": [
+                {
+                    "name": "privateKey",
+                    "arg": "private_key"
+                }
+            ],
+            "method": "post"
+        },
+        {
+            "path": "/account/unlocked/info",
+            "method": "post"
+        },
+        {
+            "path": "/account/historical/get",
+            "parameters": [
+                {
+                    "name": "address"
+                },
+                {
+                    "name": "startHeight",
+                    "arg": "start_height"
+                },
+                {
+                    "name": "endHeight",
+                    "arg": "end_height"
+                },
+                {
+                    "name": "increment"
+                }
+            ]
+        },
+        {
+            "path": "/chain/height"
+        },
+        {
+            "path": "/chain/score"
+        },
+        {
+            "path": "/chain/last-block"
+        },
+        {
+            "path": "/block/at/public",
+            "parameters": [
+                {
+                    "name": "blockHeight",
+                    "arg": "block_height"
+                }
+            ],
+            "method": "post"
+        },
+        {
+            "path": "/local/chain/blocks-after",
+            "parameters": [
+                {
+                    "name": "blockHeight",
+                    "arg": "block_height"
+                }
+            ],
+            "method": "post"
+        },
+        {
+            "path": "/node/info"
+        },
+        {
+            "path": "/node/extended-info"
+        },
+        {
+            "path": "/node/peer-list/all"
+        },
+        {
+            "path": "/node/peer-list/reachable"
+        },
+        {
+            "path": "/node/peer-list/active"
+        },
+        {
+            "path": "/node/active-peers/max-chain-height"
+        },
+        {
+            "path": "/node/experiences"
+        },
+        {
+            "path": "/node/boot",
+            "parameters": [
+                {
+                    "name": "bootNodeRequest",
+                    "arg": "boot_node_request"
+                }
+            ],
+            "method": "post"
+        },
+        {
+            "path": "/namespace/root/page",
+            "parameters": [
+                {
+                    "name": "id",
+                    "default": "__optional__"
+                },
+                {
+                    "name": "pageSize",
+                    "default": "__optional__",
+                    "arg": "page_size"
+                }
+            ]
+        },
+        {
+            "path": "/namespace",
+            "parameters": [
+                {
+                    "name": "namespace"
+                }
+            ]
+        },
+        {
+            "path": "/namespace/mosaic/definition/page",
+            "parameters": [
+                {
+                    "name": "id",
+                    "default": "__optional__"
+                },
+                {
+                    "name": "pageSize",
+                    "default": "__optional__",
+                    "arg": "page_size"
+                }
+            ]
+        },
+        {
+            "path": "/transaction/prepare-announce",
+            "parameters": [
+                {
+                    "name": "requestPrepareAnnounce",
+                    "arg": "request_prepare_announce"
+                }
+            ],
+            "method": "post"
+        },
+        {
+            "path": "/transaction/announce",
+            "parameters": [
+                {
+                    "name": "requestAnnounce",
+                    "arg": "request_announce"
+                }
+            ],
+            "method": "post"
+        }
+    ]
+}
